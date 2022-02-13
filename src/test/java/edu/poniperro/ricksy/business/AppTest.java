@@ -1,7 +1,6 @@
 package edu.poniperro.ricksy.business;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -14,5 +13,13 @@ public class AppTest
     @Test
     public void creditCard() {
         assertEquals( "4916119711304546",  abradolph.toString());
+    }
+
+    UfosPark ufo = new UfosPark();
+
+    @Test
+    public void addOvni() {
+        ufo.add("dox");
+        assertEquals( "flota={dox=null}", ufo.toString());
     }
 }
