@@ -37,17 +37,15 @@ public class UfosPark implements GuestDispatcher{
 
     @Override
     public String toString() {
-        return "flota=" + flota;
+        return this.flota.keySet().toString();
     }
 
     boolean containsCard(String card) {
-        //de momento
-        return true;
+        return this.flota.containsValue(card);
     }
 
     Collection<String> cardNumbers() {
-        return null;
-        // de momento
+        return this.flota.values();
     }
 
 }

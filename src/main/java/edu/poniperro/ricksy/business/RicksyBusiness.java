@@ -97,7 +97,7 @@ public class RicksyBusiness {
         ufosPark.dispatch(gearHead);
         System.out.println("Su credito es cero: " + gearHead.credit());
         System.out.println("No puede reservar ovni: " + ufosPark.getUfoOf(gearHead.number()));
-/*
+
 //5a hist        
         // Squanchy deja su ovni reservado
         // antes de irse a squanchear
@@ -127,7 +127,7 @@ public class RicksyBusiness {
         ufosPark.add("trex");
         System.out.println(ufosPark);
 
-
+//6a hist
         /**
          * Construye el dispensador de packs de bienvenida.
          * Indica el numero de unidades y el coste de cada
