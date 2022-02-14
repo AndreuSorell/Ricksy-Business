@@ -1,7 +1,6 @@
 package edu.poniperro.ricksy.business;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,7 @@ public class UfosParkTest {
     @Before
     public void setupUfosPark() {
         ufos = new UfosPark();
-        assertNotNull("Parque de UFOS creados", ufos);
+        assertNotNull(ufos);
         for (String ovni : ovnis) {
 			ufos.add(ovni);
         }
@@ -21,7 +20,8 @@ public class UfosParkTest {
     
     @Test
     public void addOvniTest() {
-        assertEquals( "flota={trex=null, dox=null, unx=null}", ufos.toString());
+        assertEquals( "[trex, dox, unx]", ufos.toString());
+        assertEquals(ovnis.length, ufos.cardNumbers().size());
     }
     
     @Test
@@ -43,5 +43,6 @@ public class UfosParkTest {
         ufos.dispatch(gearHead);
         assertEquals("No tiene ningun ovni asignado", ufos.getUfoOf(gearHead.number()));
         assertEquals(0.0, gearHead.credit(), 0);
+        assertFalse(ufos.containsCard(gearHead.number()));
     }
 }
