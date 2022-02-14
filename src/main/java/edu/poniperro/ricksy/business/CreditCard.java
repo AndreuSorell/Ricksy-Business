@@ -13,9 +13,14 @@ public class CreditCard {
         this.number = number;
     }
 
-    boolean pay(double credito) {
-    //de momento true
-        return true;
+    boolean pay(double precio) {
+        if (precio <= credit) {
+            this.credit -= precio;
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     String number() {

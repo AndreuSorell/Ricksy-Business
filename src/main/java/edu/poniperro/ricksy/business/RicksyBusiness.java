@@ -29,7 +29,7 @@ public class RicksyBusiness {
     
     public static void main(String[] args) {
         System.out.println();
-
+//1a hist
         /**
          * Crea una tarjeta de crédito para Abradolph.
          * Como es una AndromedanExpress
@@ -41,7 +41,7 @@ public class RicksyBusiness {
         System.out.println("\n" + "Tarjeta de Abradolph" + "\n" + 
                                   "===================="        );
         System.out.println(abradolph);
-
+//2a hist
         /**
          * Construye el componente de reserva de Ovnis.
          * Recibe el objeto tarjeta de crédito del invitado/a
@@ -60,7 +60,7 @@ public class RicksyBusiness {
 		for (String ovni : ufosID) {
 			ufosPark.add(ovni);
         }
-        
+//3a hist
         // Procesamos el pago y reserva de ovni de Abradolph
         ufosPark.dispatch(abradolph);
 
@@ -71,7 +71,8 @@ public class RicksyBusiness {
        
         // Mostramos el credito de la tarjeta de Abradolph
         System.out.println("Credito de Abradolph: " + abradolph.credit());
-
+/*
+//4a hist
         // La dualidad en Abradolph quiere reservar otro ovni.
         // El sistema detecta que ya tiene uno 
         // e ignora la petición.
