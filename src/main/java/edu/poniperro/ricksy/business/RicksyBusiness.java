@@ -82,8 +82,7 @@ public class RicksyBusiness {
         ufosPark.dispatch(abradolph);
         System.out.println("Su credito no ha cambiado: " + abradolph.credit());
         System.out.println("Ovni de Abradolph: " + ufosPark.getUfoOf(abradolph.number()));
-/*
-//5a hist
+
         // A GearHead le vacía la tarjeta el alien "Cámara Lenta" 
         // mientras le daba la chapa, justo antes de pagar el ovni.
         // Intenta reservarlo y el componente de reserva de ovnis
@@ -98,7 +97,8 @@ public class RicksyBusiness {
         ufosPark.dispatch(gearHead);
         System.out.println("Su credito es cero: " + gearHead.credit());
         System.out.println("No puede reservar ovni: " + ufosPark.getUfoOf(gearHead.number()));
-        
+/*
+//5a hist        
         // Squanchy deja su ovni reservado
         // antes de irse a squanchear
 

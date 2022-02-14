@@ -3,7 +3,6 @@ package edu.poniperro.ricksy.business;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class UfosPark implements GuestDispatcher{
     private double fee = 500;

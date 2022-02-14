@@ -24,18 +24,24 @@ public class UfosParkTest {
         assertEquals( "flota={trex=null, dox=null, unx=null}", ufos.toString());
     }
     
-    //comprobamos que se ha reducido el credito de la tarjeta y se le ha assignado una nave
     @Test
     public void dispatchTest() {
+        //comprobamos que se ha reducido el credito de la tarjeta y se le ha assignado una nave
         CreditCard abradolph = new CreditCard("Abradolf Lincler", "4916119711304546");
         ufos.dispatch(abradolph);
         assertEquals("trex", ufos.getUfoOf(abradolph.number()));
         assertEquals(2500.0, abradolph.credit(), 0);
+
         //comprobamos que si Abradolf quiere mas ovnis no puede porque ya tiene uno
         ufos.dispatch(abradolph);
         assertEquals("trex", ufos.getUfoOf(abradolph.number()));
         assertEquals(2500.0, abradolph.credit(), 0);
-
+        
+        //comprobamos que sin blanca no hay ovni
+        CreditCard gearHead = new CreditCard("Gearhead", "8888888888888888");
+        gearHead.pay(3000); // le vacían la cartera
+        ufos.dispatch(gearHead);
+        assertEquals("No tiene ningun ovni asignado", ufos.getUfoOf(gearHead.number()));
+        assertEquals(0.0, gearHead.credit(), 0);
     }
-
 }
