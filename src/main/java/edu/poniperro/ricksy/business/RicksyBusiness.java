@@ -71,7 +71,7 @@ public class RicksyBusiness {
        
         // Mostramos el credito de la tarjeta de Abradolph
         System.out.println("Credito de Abradolph: " + abradolph.credit());
-/*
+
 //4a hist
         // La dualidad en Abradolph quiere reservar otro ovni.
         // El sistema detecta que ya tiene uno 
@@ -82,7 +82,8 @@ public class RicksyBusiness {
         ufosPark.dispatch(abradolph);
         System.out.println("Su credito no ha cambiado: " + abradolph.credit());
         System.out.println("Ovni de Abradolph: " + ufosPark.getUfoOf(abradolph.number()));
-
+/*
+//5a hist
         // A GearHead le vacía la tarjeta el alien "Cámara Lenta" 
         // mientras le daba la chapa, justo antes de pagar el ovni.
         // Intenta reservarlo y el componente de reserva de ovnis

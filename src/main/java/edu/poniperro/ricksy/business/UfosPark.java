@@ -17,24 +17,13 @@ public class UfosPark implements GuestDispatcher{
     
     @Override
     public void dispatch(CreditCard invitado) {
-        /* 
-        Recibe el objeto tarjeta de crédito del invitado/a
-         * en el método dispatch(card)
-         * y realiza un cargo a la tarjeta.
-         * Si hay saldo suficiente se reserva un UberOvni
-         * de los que estén libres.
-         * El coste del ovni es de 500 EZIs.
-        */
-        if (invitado.pay(fee) && flota.containsValue(null)) {
+        if (!flota.containsValue(invitado.number()) && flota.containsValue(null) && invitado.pay(fee))  {  
             for (String key : flota.keySet()) {
                 if (flota.get(key) == null) {
                     flota.replace(key, invitado.number());
                     break;
                 }
             }
-        }
-        else {
-            System.out.println("no hay saldo suficiente o no hay ovnis diponibles");
         }
     }
 
