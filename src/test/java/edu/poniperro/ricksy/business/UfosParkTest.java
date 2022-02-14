@@ -31,5 +31,11 @@ public class UfosParkTest {
         ufos.dispatch(abradolph);
         assertEquals("trex", ufos.getUfoOf(abradolph.number()));
         assertEquals(2500.0, abradolph.credit(), 0);
+        //comprobamos que si Abradolf quiere mas ovnis no puede porque ya tiene uno
+        ufos.dispatch(abradolph);
+        assertEquals("trex", ufos.getUfoOf(abradolph.number()));
+        assertEquals(2500.0, abradolph.credit(), 0);
+
     }
+
 }
