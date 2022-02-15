@@ -8,6 +8,6 @@ public class CreditCardTest {
     CreditCard abradolph = new CreditCard("Abradolph Lincler", "4916119711304546");
     @Test
     public void creditCardTest() {
-        assertEquals( "4916119711304546",  abradolph.toString());
+        assertEquals( "4916119711304546 EZI",  abradolph.toString());
     }
 }

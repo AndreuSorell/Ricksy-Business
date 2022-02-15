@@ -36,7 +36,7 @@ public class CreditCard {
 
     @Override
     public String toString() {
-        return  number();
+        return  number() + " " + SYMBOL;
     }
 
     
