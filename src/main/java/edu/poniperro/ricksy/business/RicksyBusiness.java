@@ -133,7 +133,7 @@ public class RicksyBusiness {
          * Indica el numero de unidades y el coste de cada
          * uno de ellos, que es de 50 EZIs
          */
-/*
+
         CrystalExpender packExpender = new CrystalExpender(3, 50);
 
         // Muestra el total de packs y su precio unidad
@@ -156,7 +156,7 @@ public class RicksyBusiness {
         System.out.println("Packs\n" + packExpender);
         System.out.println("Credito de GearHead: " + gearHead.credit());
 
-
+//7a hist
         /**
          * Vamos a automatizar ahora ambas tareas, de modo que
          * cuando llega un invitado/a se le asiga un ovni

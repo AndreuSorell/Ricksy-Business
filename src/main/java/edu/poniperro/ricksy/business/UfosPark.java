@@ -26,6 +26,11 @@ public class UfosPark implements GuestDispatcher{
         }
     }
 
+    /**
+     * Metodo que devuelve el ovni asignado a una card
+     * @param card
+     * @return key
+     */
     String getUfoOf(String card) {
         for (String key : flota.keySet()) {
             if (flota.get(key) == card) {

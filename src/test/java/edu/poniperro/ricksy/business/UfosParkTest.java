@@ -6,8 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class UfosParkTest {
-    UfosPark ufos = null;
-    String[] ovnis = { "unx", "dox", "trex" };
+    private UfosPark ufos = null;
+    private String[] ovnis = { "unx", "dox", "trex" };
 
     @Before
     public void setupUfosPark() {
@@ -23,7 +23,7 @@ public class UfosParkTest {
         assertEquals( "[trex, dox, unx]", ufos.toString());
         assertEquals(ovnis.length, ufos.cardNumbers().size());
     }
-    
+
     @Test
     public void dispatchTest() {
         //comprobamos que se ha reducido el credito de la tarjeta y se le ha assignado una nave
