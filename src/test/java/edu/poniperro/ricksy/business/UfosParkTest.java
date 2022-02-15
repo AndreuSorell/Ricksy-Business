@@ -6,8 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class UfosParkTest {
-    private UfosPark ufos = null;
-    private String[] ovnis = { "unx", "dox", "trex" };
+    UfosPark ufos = null;
+    String[] ovnis = { "unx", "dox", "trex" };
 
     @Before
     public void setupUfosPark() {

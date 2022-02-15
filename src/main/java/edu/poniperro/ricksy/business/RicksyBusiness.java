@@ -159,14 +159,14 @@ public class RicksyBusiness {
 //7a hist
         /**
          * Vamos a automatizar ahora ambas tareas, de modo que
-         * cuando llega un invitado/a se le asiga un ovni
+         * cuando llega un invitado/a se le asigna un ovni
          * y un pack y se realiza el cargo a la tarjeta.
          * 
          * Para ello, crea el componente receptivo
          * y registra (añade) los componentes UfosPark
          * y CrystalDispatcher al receptivo
          */
-/*
+
         Receptivo receptivo = new Receptivo();
         receptivo.registra(packExpender);
         receptivo.registra(ufosPark);
@@ -207,7 +207,7 @@ public class RicksyBusiness {
         receptivo.dispatch(morty);
         mostrarReserva(morty, packExpender, ufosPark);
         
-
+//8a hist
         /**
          * A por el 10!! 
          * Wubba lubba dub dub!!
@@ -221,9 +221,9 @@ public class RicksyBusiness {
          * Muestra el total de pedidos y la lista de
          * invitados/as (numero de tarjeta) que han hecho un pedido.
          */
-
-         // tu código aquí
 /*
+         // tu código aquí
+
         RickMenuDispatcher MenuDispatcher = new RickMenuDispatcher();
 
         receptivo.registra(MenuDispatcher);
@@ -245,12 +245,13 @@ public class RicksyBusiness {
             System.out.println(card);
             System.out.println();
         }
+*/
     }
 
     private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
         System.out.println(card);
         System.out.println("Packs: " + expender.stock());
         System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
-*/
+
     }
 }
